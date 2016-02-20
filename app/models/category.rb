@@ -1,3 +1,4 @@
 class Category < ActiveRecord::Base
-  has_many :makes
+  has_many :models
+  has_many :makes, through: :models
 end

@@ -11,23 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160220214823) do
+ActiveRecord::Schema.define(version: 20160220231103) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "cars", force: :cascade do |t|
-    t.string   "category"
-    t.string   "make"
     t.string   "model"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
     t.integer  "dealership_id"
-    t.integer  "category_id"
+    t.integer  "model_id"
   end
 
-  add_index "cars", ["category_id"], name: "index_cars_on_category_id", using: :btree
   add_index "cars", ["dealership_id"], name: "index_cars_on_dealership_id", using: :btree
+  add_index "cars", ["model_id"], name: "index_cars_on_model_id", using: :btree
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -52,14 +50,17 @@ ActiveRecord::Schema.define(version: 20160220214823) do
 
   create_table "models", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.integer  "make_id"
+    t.integer  "category_id"
   end
 
+  add_index "models", ["category_id"], name: "index_models_on_category_id", using: :btree
   add_index "models", ["make_id"], name: "index_models_on_make_id", using: :btree
 
-  add_foreign_key "cars", "categories"
   add_foreign_key "cars", "dealerships"
+  add_foreign_key "cars", "models"
+  add_foreign_key "models", "categories"
   add_foreign_key "models", "makes"
 end
