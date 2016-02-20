@@ -1,11 +1,19 @@
 Rails.application.routes.draw do
   resources :cars
-
-  resources :dealership
+  get '/dealership/cars/type' => 'cars#type'
   
 
-# get 'dealership' => 'welcome#index'
+  resources :dealership
+
+
+# get 'dealership' => 'dealership#index'
+# get 'cars' => 'cars#index'
+
+# get '/dealership/cars/type/make' => 'cars#index'
+# get '/dealership/cars/types/makes/models' => 'cars#index'
+# get '/dealership/cars/types/makes/models/mycar' => 'cars#show'
 #
+
 # get 'cars' => 'cars'
 #
 # get 'make' => ''
