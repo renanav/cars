@@ -15,3 +15,8 @@
 /log/*
 !/log/.keep
 /tmp
+
+<%= link_to "sedan", "dealerships/sedans" {controller: "cars", action: "category", category: "sedan"} %>
+<%= link_to "suv", {controller: "cars", action: "category", category: "suv"} %>
+<%= link_to "super_sport", {controller: "cars", action: "category", category: "super_sport"} %>
+<%= link_to "super_saloon", {controller: "cars", action: "category", category: "super_saloon"} %>

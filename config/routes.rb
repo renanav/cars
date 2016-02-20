@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :cars
-  get '/dealership/cars/type' => 'cars#type'
-  
+  get '/dealership/cars/category' => 'cars#category'
+
 
   resources :dealership
 

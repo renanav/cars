@@ -4,13 +4,13 @@ class CarsController < ApplicationController
       @cars = Car.all
   end
 
-  def type
-    @info = params[:type]
-    case params[:type]
-        when "sedan" then @cars = Car.where(type: "Sedan")
-        when "suv" then @cars = Car.where(type: "suv")
-        when "super_sport" then @cars = Car.where(type: "super_sport")
-        when "super_saloon" then @cars = Car.where(type: "super_saloon")
+  def category
+    @info = params[:category]
+    case params[:category]
+        when "sedan" then @cars = Car.where(category: "Sedan")
+        when "suv" then @cars = Car.where(category: "suv")
+        when "super_sport" then @cars = Car.where(category: "super_sport")
+        when "super_saloon" then @cars = Car.where(category: "super_saloon")
       end
   end
 
