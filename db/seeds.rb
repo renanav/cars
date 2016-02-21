@@ -25,9 +25,9 @@ dealership1 = Dealership.create(name: "Renani's", address: "aventura, fl", email
 # make_id:9 is bugatti
 # make_id:10 is rolls_roys
 # make_id:11 is bentley
-# make_id:12 is aston_martin
+# make_id:12 is empty empty empty empty empty empty empty empty empty empty empty 
 # make_id:13 is porsche
-# make_id:14 is
+# make_id:14 is aston_martin
 
 
 # make1 = Make.create(make: "audi")
