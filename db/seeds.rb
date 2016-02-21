@@ -18,14 +18,15 @@ dealership1 = Dealership.create(name: "Renani's", address: "aventura, fl", email
 # make_id:3 is lexus
 # make_id:4 is land_rover
 # make_id:5 is bmw
-# make_id:6 is volvo
+# ****** porsche is next but its id is 13
+# make_id:6 is volvo DELETE
 # make_id:7 is ferrari
 # make_id:8 is lamborghini
 # make_id:9 is bugatti
 # make_id:10 is rolls_roys
 # make_id:11 is bentley
 # make_id:12 is aston_martin
-# make_id:13 is
+# make_id:13 is porsche
 # make_id:14 is
 
 
