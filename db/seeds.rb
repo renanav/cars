@@ -7,15 +7,26 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 dealership1 = Dealership.create(name: "Renani's", address: "aventura, fl", email: "renan.avrahami@gmail.com", phone_number: "3058348384")
 
-# cat1 = Category.create(category: "sedan")
-# cat2 = Category.create(category: "suv")
-# cat3 = Category.create(category: "super_sport")
-# cat4 = Category.create(category: "super_saloon")
 
 # category_id:1 is sedan
 # category_id:2 is suv
 # category_id:3 is super_sport
 # category_id:4 is super_saloon
+
+# make_id:1 is audi
+# make_id:2 is mercedes
+# make_id:3 is lexus
+# make_id:4 is land_rover
+# make_id:5 is bmw
+# make_id:6 is volvo
+# make_id:7 is ferrari
+# make_id:8 is lamborghini
+# make_id:9 is bugatti
+# make_id:10 is rolls_roys
+# make_id:11 is bentley
+# make_id:12 is aston_martin
+# make_id:13 is
+# make_id:14 is
 
 
 make1 = Make.create(make: "audi")
@@ -25,7 +36,7 @@ make4 = Make.create(make: "land_rover")
 make5 = Make.create(make: "bmw")
 make6 = Make.create(make: "volvo")
 make7 = Make.create(make: "ferrari")
-make8 = Make.create(make: "lamborgini")
+make8 = Make.create(make: "lamborghini")
 make9 = Make.create(make: "bugatti")
 make10 = Make.create(make: "rolls_roys")
 make11 = Make.create(make: "bentley")
