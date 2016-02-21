@@ -7,23 +7,29 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 dealership1 = Dealership.create(name: "Renani's", address: "aventura, fl", email: "renan.avrahami@gmail.com", phone_number: "3058348384")
 
-cat1 = Category.create(category: "sedan")
-cat2 = Category.create(category: "suv")
-cat3 = Category.create(category: "super_sport")
-cat4 = Category.create(category: "super_saloon")
+# cat1 = Category.create(category: "sedan")
+# cat2 = Category.create(category: "suv")
+# cat3 = Category.create(category: "super_sport")
+# cat4 = Category.create(category: "super_saloon")
+
+# category_id:1 is sedan
+# category_id:2 is suv
+# category_id:3 is super_sport
+# category_id:4 is super_saloon
+
 
 make1 = Make.create(make: "audi")
 make2 = Make.create(make: "mercedes")
 make3 = Make.create(make: "lexus")
-make4 = Make.create(make: "land-rover")
+make4 = Make.create(make: "land_rover")
 make5 = Make.create(make: "bmw")
 make6 = Make.create(make: "volvo")
 make7 = Make.create(make: "ferrari")
 make8 = Make.create(make: "lamborgini")
 make9 = Make.create(make: "bugatti")
-make10 = Make.create(make: "rolls-roys")
+make10 = Make.create(make: "rolls_roys")
 make11 = Make.create(make: "bentley")
-make12 = Make.create(make: "aston-martin")
+make12 = Make.create(make: "aston_martin")
 
 car1 = Car.create(category: "sedan", make: "audi", model: "s8 plus", dealership_id:1)
 car2 = Car.create(category: "sedan", make: "audi", model: "rs 7", dealership_id:1)
