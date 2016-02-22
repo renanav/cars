@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   resources :cars
-  get '/dealership/cars/category' => 'cars#category'
-
+  # get '/dealership/cars' => 'cars#index'
+  # get '/dealership/cars/category' => 'categoty#index'
+  get '/dealership/' => 'dealership#index'
+  get '/dealership/category/make' => 'category#index'
+  get '/dealership/category/make' => 'make#index'
+  get '/dealership/category/make/model' => 'model#show'
 
   resources :dealership
 

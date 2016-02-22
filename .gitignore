@@ -20,3 +20,11 @@
 <%= link_to "suv", {controller: "cars", action: "category", category: "suv"} %>
 <%= link_to "super_sport", {controller: "cars", action: "category", category: "super_sport"} %>
 <%= link_to "super_saloon", {controller: "cars", action: "category", category: "super_saloon"} %>
+
+from views/cars/category.html.erb:
+ <h1><%= @info %> View</h1>
+<%= @cars.each do |auto| %>
+  <%= div_for auto do %>
+    <p><%= auto.display %></p>
+  <% end %>
+<% end %>
