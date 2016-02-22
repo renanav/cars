@@ -1,7 +1,4 @@
 <p> Welcome to the dealership. Here will be 4 categories</p>
 <p> <%= @dealership.name %> </p>
 
-<%= link_to "sedan", {controller: "cars", action: "category", category: "sedan"} %>
-<%= link_to "suv", {controller: "cars", action: "category", category: "suv"} %>
-<%= link_to "super_sport", {controller: "cars", action: "category", category: "super_sport"} %>
-<%= link_to "super_saloon", {controller: "cars", action: "category", category: "super_saloon"} %>
+<%= @category %>
