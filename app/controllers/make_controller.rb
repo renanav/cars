@@ -2,7 +2,9 @@ class MakeController < ApplicationController
 
 
   def index
-    @makes = Make.all
+    # @makes = Make.all
+      @make = Make.find_by(name: params[:make_name])
+      @make_models = @make.models
   end
 
   def cat_make

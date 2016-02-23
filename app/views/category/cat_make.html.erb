@@ -1,1 +1,4 @@
 <h1> Here will be 3 makes of a certain category </h1>
+<% @makes.each do |make| %>
+  <%=link_to make.name.capitalize, make_index_path(make_name: make.name) %>
+<% end %>
