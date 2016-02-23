@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # get '/dealership/cars/category' => 'categoty#index'
   get '/dealership/' => 'category#index'
   get '/dealership/category' => 'category#cat_make'
+  get '/dealership/category/make/model_id' => 'model#show' #not sure about the path
   # get '/dealership/category/make' => 'make#index'
   # get '/dealership/category/make/model' => 'model#show'
 

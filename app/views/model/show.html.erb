@@ -1,1 +1,6 @@
-<h1> here is where will be 3 models of a maker </h1>
+<h1>Here will be one car</h1>
+<% id = 1 %>
+<% @models.each do |car_model| %>
+  <%=link_to car_model.name, make_model_path(model_id: id) %>
+  <% id += 1 %>
+<% end %>
