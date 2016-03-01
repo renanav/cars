@@ -8,6 +8,7 @@
 dealership1 = Dealership.create(name: "Renani's", address: "aventura, fl", email: "renan.avrahami@gmail.com", phone_number: "3058348384")
 
 
+s8_plus.image= "audi_s8_plus.jpeg"
 # category_id:1 is sedan
 # category_id:2 is suv
 # category_id:3 is super_sport
@@ -25,7 +26,7 @@ dealership1 = Dealership.create(name: "Renani's", address: "aventura, fl", email
 # make_id:9 is bugatti
 # make_id:10 is rolls_roys
 # make_id:11 is bentley
-# make_id:12 is empty empty empty empty empty empty empty empty empty empty empty 
+# make_id:12 is empty empty empty empty empty empty empty empty empty empty empty
 # make_id:13 is porsche
 # make_id:14 is aston_martin
 
