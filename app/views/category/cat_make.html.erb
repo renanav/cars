@@ -1,4 +1,17 @@
 <h1> Here will be 3 makes of a certain category </h1>
-<% @remove_dup.each do |make| %>
-  <%=link_to make.name.capitalize, make_index_path(make_name: make.name) %>
-<% end %>
+
+<div class="make-selector">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <% @remove_dup.each do |make| %>
+                <li><%=link_to make.name.capitalize, make_index_path(make_name: make.name) %></li>
+              <% end %>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</div>

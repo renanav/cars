@@ -1,3 +1,13 @@
 // Place all the styles related to the category controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#categoryIndexBackground {
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  /*background: url('../img/bg.jpg') no-repeat center center fixed;*/
+  background-image: url("speed-background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
