@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'seed_dump'
 # gem 'therubyracer'
 # gem 'less-rails'
 # gem 'twitter-bootstrap-rails'
