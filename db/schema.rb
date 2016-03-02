@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20160301232021) do
   enable_extension "plpgsql"
 
   create_table "cars", force: :cascade do |t|
+    t.string   "category"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
     t.integer  "dealership_id"

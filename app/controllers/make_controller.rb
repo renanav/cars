@@ -5,6 +5,9 @@ class MakeController < ApplicationController
     # @makes = Make.all
       @make = Make.find_by(name: params[:make_name])
       @make_models = @make.models
+
+      mod = @make.models | @make.models
+      @remove_dup_models = mod
   end
 
   def cat_make
