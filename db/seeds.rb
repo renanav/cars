@@ -1,58 +1,14 @@
-# Car.create!([
-#   {dealership_id: nil, model_id: nil},
-#   {dealership_id: nil, model_id: nil},
-#   {dealership_id: nil, model_id: nil},
-#   {dealership_id: nil, model_id: nil},
-#   {dealership_id: nil, model_id: nil},
-#   {dealership_id: nil, model_id: nil},
-#   {dealership_id: nil, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil},
-#   {dealership_id: 1, model_id: nil}
-# ])
 Category.create!([
   {name: "sedan"},
   {name: "suv"},
   {name: "super_sport"},
   {name: "super_saloon"}
 ])
+
 Dealership.create!([
   {name: "Renani's", address: "aventura, fl", email: "renan.avrahami@gmail.com", phone_number: "3058348384"},
-  # {name: "Renani's", address: "aventura, fl", email: "renan.avrahami@gmail.com", phone_number: "3058348384"}
 ])
+
 Make.create!([
   {name: "Audi"},
   {name: "Mercedes"},
@@ -67,6 +23,7 @@ Make.create!([
   {name: "Aston Martin"},
   {name: "Porsche"}
 ])
+
 Model.create!([
   {name: "s8_plus", make_id: 1, category_id: 1, image: "audi_s8_plus"},
   {name: "rs_7_2016", make_id: 1, category_id: 1, image: "audi_rs7"},
@@ -89,7 +46,7 @@ Model.create!([
   {name: "california_2016", make_id: 6, category_id: 3, image: "ferrari_california"},
   {name: "488_gtb_2016", make_id: 6, category_id: 3, image: "ferrari_488_gtb"},
   {name: "la_ferrari_2016", make_id: 6, category_id: 3, image: "ferrari_la_ferrari"},
-  {name: "venono_roadster", make_id: 7, category_id: 3, image: "lamborghini_venono_roadster"},
+  {name: "veneno_roadster", make_id: 7, category_id: 3, image: "lamborghini_veneno_roadster"},
   {name: "aventador_superveloce_roadster_2016", make_id: 7, category_id: 3, image: "lamborghini_aventador_superveloce_roadster"},
   {name: "huracan_2016", make_id: 7, category_id: 3, image: "lamborghini_huracan"},
   {name: "veyron_16.4_2016", make_id: 8, category_id: 3, image: "bugatti_veyron_16.4"},

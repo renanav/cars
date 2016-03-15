@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Lets you create pretty URLs and work with human-friendly strings as if they were numeric ids
+gem 'friendly_id'
 gem 'seed_dump'
 # gem 'therubyracer'
 # gem 'less-rails'
