@@ -11,3 +11,20 @@
   background-size: cover;
   -o-background-size: cover;
 }
+
+// ADJUST THE SIZE OF THE IMAGES TO THE SCREEN
+#case-1-background{
+  background-image: url("sedan-background.jpg");
+}
+
+#case-2-background{
+  background-image: url("terrain_4.jpg");
+}
+
+#case-3-background{
+  background-image: url("super-sport-background.jpg");
+}
+
+#case-4-background{
+  background-image: url("super-saloon-background.jpg");
+}

@@ -1,5 +1,22 @@
 <h1> Here will be 3 makes of a certain category </h1>
 
+<!-- this will display a different background for each category (can be used also for makes and models), this one should eventually
+be in the category helper -->
+<!-- // ADJUST THE SIZE OF THE IMAGES TO THE SCREEN -->
+<% case @cat.id %>
+  <% when 1 %>
+  <body id="case-1-background">
+  <% when 2 %>
+  <body id="case-2-background">
+  <% when 3 %>
+  <body id="case-3-background">
+  <% when 4 %>
+  <body id="case-4-background">
+<% end %>
+
+
+
+
 <div class="make-selector">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
