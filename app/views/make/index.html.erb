@@ -1,4 +1,34 @@
-<h1> here is where will be 3 models of a maker </h1>
+<h1> Please choose a make for your car </h1>
+
+<!-- Present a different background for each chosen make's body page -->
+<% case @make.name %>
+  <% when "Audi" %>
+  <body id="audi-background">
+  <% when "Mercedes" %>
+  <body id="mercedes-background">
+  <% when "Lexus" %>
+  <body id="lexus-background">
+  <% when "Land Rover" %>
+  <body id="land-rover-background">
+  <% when "Bmw" %>
+  <body id="bmw-background">
+  <% when "Porsche" %>
+  <body id="porsche-background">
+  <% when "Ferrari" %>
+  <body id="ferrari-background">
+  <% when "Lamborghini" %>
+  <body id="lamborghini-background">
+  <% when "Bugatti" %>
+  <body id="bugatti-background">
+  <% when "Rolls Roys" %>
+  <body id="rolls-roys-background">
+  <% when "Bentley" %>
+  <body id="bentley-background">
+  <% when "Aston Martin" %>
+  <body id="aston-martin-background">
+
+<% end %>
+
 
 <div class="make-selector">
     <div class="container">
