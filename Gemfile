@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-gem 'dotenv-rails', :groups => [:development, :test]
+gem 'dotenv-rails'
 # AWS to store images
 gem 'aws-sdk', '~> 2'
 # per heroku's request
