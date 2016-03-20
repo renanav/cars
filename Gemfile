@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+
+gem 'dotenv-rails', :groups => [:development, :test]
+# AWS to store images
+gem 'aws-sdk', '~> 2'
 # per heroku's request
 gem 'ruby'
 # Lets you create pretty URLs and work with human-friendly strings as if they were numeric ids
