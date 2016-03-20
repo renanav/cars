@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# per heroku's request
+gem 'ruby'
 # Lets you create pretty URLs and work with human-friendly strings as if they were numeric ids
 gem 'friendly_id'
 gem 'seed_dump'
@@ -12,7 +14,7 @@ gem 'rails', '4.2.5.1'
 # Use sqlite3 as the database for Active Record
 # commented and replaced with gem 'pg' to solve heroku pushing issues
 # gem 'sqlite3'
-gem 'pg'
+# gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -31,7 +33,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 # To enable a friendlier display of errors when pushing to keroku. always add this gem when pushing to heroku
-gem 'rails_12factor'
+# gem 'rails_12factor'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -54,4 +56,9 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+# to enable images on heroku
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
