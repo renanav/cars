@@ -1,8 +1,8 @@
 Category.create!([
-  {name: "sedan"},
-  {name: "suv"},
-  {name: "super_sport"},
-  {name: "super_saloon"}
+  {name: "sedan", category_id: 1},
+  {name: "suv", category_id: 2},
+  {name: "super_sport", category_id: 3},
+  {name: "super_saloon", category_id: 4}
 ])
 
 Dealership.create!([
