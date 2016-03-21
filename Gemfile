@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'paperclip'
 gem 'figaro'
 gem 'dotenv-rails'
 # AWS to store images
