@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
-
+gem 'figaro'
 gem 'dotenv-rails'
 # AWS to store images
-gem 'aws-sdk', '~> 2'
+gem 'aws-sdk'
 # per heroku's request
 gem 'ruby'
 # Lets you create pretty URLs and work with human-friendly strings as if they were numeric ids

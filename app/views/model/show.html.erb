@@ -1,5 +1,99 @@
 <title>Model</title>
 <h1>Here will be one car</h1>
 <%= @models.name %>
-<div id="car-display"> <%= image_tag @models.image %> </div>
-<div id="car-description"> </div>
+<% case @models.model_id %>
+  <% when 1 %>
+  <div>
+    <img class="car-display" id="s8_plus">/>
+  </div>
+  <% when 2 %>
+  <div>
+    <img class="car-display" id="rs_7_2016">/>
+  </div>
+  <% when 3 %>
+  <div>
+    <img class="car-display" id="s7_2016">/>
+  </div>
+  <% when 4 %>
+  <div>
+    <img class="car-display" id="amg_s65_2016">/>
+  </div>
+  <% when 5 %>
+  <div>
+    <img class="car-display" id="amg_s63_2016">/>
+  </div>
+  <% when 6 %>
+  <div>
+    <img class="car-display" id="s600_2016">/>
+  </div>
+  <% when ""%>
+  <div>
+    <img class="car-display" id="">/>
+  </div>
+  <% when ""%>
+  <div>
+    <img class="car-display" id="">/>
+  </div>
+  <% when ""%>
+  <div>
+    <img class="car-display" id="">/>
+  </div>
+  <% when ""%>
+  <div>
+    <img class="car-display" id="">/>
+  </div>
+  <% when ""%>
+  <div>
+    <img class="car-display" id="">/>
+  </div>
+  <% when ""%>
+  <div>
+    <img class="car-display" id="">/>
+  </div>
+  <% when ""%>
+  <div>
+    <img class="car-display" id="">/>
+  </div>
+  <% when ""%>
+  <div>
+    <img class="car-display" id="">/>
+  </div>
+  <% when ""%>
+  <div>
+    <img class="car-display" id="">/>
+  </div>
+  <% when ""%>
+  <div>
+    <img class="car-display" id="">/>
+  </div>
+  <% when ""%>
+  <div>
+    <img class="car-display" id="">/>
+  </div>
+  <% when ""%>
+  <div>
+    <img class="car-display" id="">/>
+  </div>
+  <% when ""%>
+  <div>
+    <img class="car-display" id="">/>
+  </div>
+  <% when ""%>
+  <div>
+    <img class="car-display" id="">/>
+  </div>
+  <% when ""%>
+  <div>
+    <img class="car-display" id="">/>
+  </div>
+  <% when ""%>
+  <div>
+    <img class="car-display" id="">/>
+  </div>
+  <% when ""%>
+  <div>
+    <img class="car-display" id="">/>
+  </div>
+
+<!-- <div id="car-description"> </div> -->
+ <% end %>
