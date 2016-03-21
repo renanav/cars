@@ -17,3 +17,6 @@
 /tmp
 
 /.env
+
+#ignore images folder
+/app/assets/images
