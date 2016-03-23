@@ -14,6 +14,7 @@ gem 'seed_dump'
 # gem 'less-rails'
 # gem 'twitter-bootstrap-rails'
 gem 'postgresql'
+# gem 'pg'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5.1'
 # Use sqlite3 as the database for Active Record
@@ -44,7 +45,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -64,6 +65,5 @@ group :development do
 end
 # to enable images on heroku
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end
