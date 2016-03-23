@@ -104,8 +104,6 @@ GEM
       mime-types
       mimemagic (= 0.3.0)
     pg (0.18.4)
-    postgresql (1.0.0)
-      pg
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -201,7 +199,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   paperclip
-  postgresql
+  pg
   rails (= 4.2.5.1)
   rails-erd
   rails_12factor

@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-ruby '2.2.4'
+ruby '2.3.0'
+gem 'rails', '4.2.5.1'
 
 gem 'paperclip'
 gem 'figaro'
@@ -14,10 +15,8 @@ gem 'seed_dump'
 # gem 'therubyracer'
 # gem 'less-rails'
 # gem 'twitter-bootstrap-rails'
-gem 'postgresql'
-# gem 'pg'
+gem 'pg'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5.1'
 # Use sqlite3 as the database for Active Record
 # commented and replaced with gem 'pg' to solve heroku pushing issues
 # gem 'sqlite3'
