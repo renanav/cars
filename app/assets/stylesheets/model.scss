@@ -124,7 +124,10 @@
 // }
 //
 .car-display{
-  width: 40%;
+  height: auto;
+  width: auto;
+  max-width: 60%;
+  max-height: 60%;
 }
 
 #car-description{
