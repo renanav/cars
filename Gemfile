@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
+ruby '2.2.4'
 gem 'paperclip'
 gem 'figaro'
 gem 'dotenv-rails'
 # AWS to store images
 gem 'aws-sdk'
 # per heroku's request
-ruby "2.2.4"
 # Lets you create pretty URLs and work with human-friendly strings as if they were numeric ids
 gem 'friendly_id'
 gem 'seed_dump'
