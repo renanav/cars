@@ -5,7 +5,7 @@ gem 'rails', '4.2.5.1'
 
 gem 'paperclip'
 gem 'figaro'
-gem 'dotenv-rails'
+gem 'dotenv-rails', :groups => [:development, :test]
 # AWS to store images
 gem 'aws-sdk'
 # per heroku's request
