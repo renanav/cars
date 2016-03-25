@@ -11,7 +11,7 @@ default: &default
 development:
   adapter: postgresql
   host: localhost
-  username: user
+  username: app_name
   database: app-dev
 # development:
 #   <<: *default
