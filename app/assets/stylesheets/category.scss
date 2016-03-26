@@ -3,33 +3,77 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #categoryIndexBackground {
-  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  // font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
   /*background: url('../img/bg.jpg') no-repeat center center fixed;*/
-  background-image: url("https://s3.amazonaws.com/renansbucket/speed-background.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+  background: url("https://s3.amazonaws.com/railscars/speed-background.png");
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // background-size: cover;
+  // -o-background-size: cover;
   background-size:100% 100%;
 }
 
 // ADJUST THE SIZE OF THE IMAGES TO THE SCREEN
 #case-1-background{
-  background-image: url("https://s3.amazonaws.com/renansbucket/sedan-background.jpg");
+  background-image: url("https://s3.amazonaws.com/railscars/sedan-background.jpg");
   background-size:100% 100%;
 }
 
 #case-2-background{
-  background-image: url("https://s3.amazonaws.com/renansbucket/terrain_1.jpg");
+  background-image: url("https://s3.amazonaws.com/railscars/terrain_1.jpg");
   background-size:100% 100%;
 }
 
 #case-3-background{
-  background-image: url("https://s3.amazonaws.com/renansbucket/super-sport-background.jpg");
+  background-image: url("hhttps://s3.amazonaws.com/railscars/super-sport-background.jpg");
   background-size:100% 100%;
 }
 
 #case-4-background{
   background-image: url("https://s3.amazonaws.com/renansbucket/super-saloon-background.jpg");
   background-size:100% 100%;
+}
+
+#sport-1{
+  content: url("https://s3.amazonaws.com/railscars/sport_1.jpg");
+}
+
+#luxury-1{
+  content: url("https://s3.amazonaws.com/railscars/luxury_1.jpg");
+}
+
+#urban-1{
+  content: url("https://s3.amazonaws.com/railscars/urban_1.jpg");
+}
+
+#terrain-2{
+  content: url("https://s3.amazonaws.com/railscars/terrain_2.jpg");
+}
+
+#sport-2{
+  content: url("https://s3.amazonaws.com/railscars/sport_2.jpg");
+}
+
+#luxury-2{
+  content: url("https://s3.amazonaws.com/railscars/luxury_2.jpg");
+}
+
+#terrain-2{
+  content: url("https://s3.amazonaws.com/railscars/terrain_2.jpg");
+}
+
+#luxury-3{
+  content: url("https://s3.amazonaws.com/railscars/luxury_3.jpg");
+}
+
+#luxury-4{
+  content: url("https://s3.amazonaws.com/railscars/luxury_4.jpg");
+}
+
+#terrain-3{
+  content: url("https://s3.amazonaws.com/railscars/terrain_3.jpg");
+}
+
+.img-full{
+  height: 560px;
 }
