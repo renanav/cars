@@ -5,7 +5,7 @@
   <% id += 1 %>
 <% end %>
 <div class="brand">Renan's Place</div>
-<div class="address-bar"></div>
+<div class="address-bar">Some datails about me</div>
 
 <!-- Navigation -->
 
@@ -41,6 +41,12 @@
         <div class="box">
             <div class="col-lg-12 text-center">
                 <div id="carousel-example-generic" class="carousel slide">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators hidden-xs">
+                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  </ol>
 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
@@ -86,22 +92,29 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <h2 class="brand-before">
-                    <small>Welcome to</small>
-                </h2>
-                <h1 class="brand-name">Business Casual</h1>
-                <hr class="tagline-divider">
-                <h2>
-                    <small>By
-                        <strong>Start Bootstrap</strong>
-                    </small> -->
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                    <span class="icon-prev"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                    <span class="icon-next"></span>
+                </a>
+            </div>
+            <h2 class="brand-before">
+                <small>Welcome to</small>
+            </h2>
+            <h1 class="brand-name">Business Casual</h1>
+            <hr class="tagline-divider">
+            <h2>
+                <small>By
+                    <strong>Start Bootstrap</strong>
+                </small>
                 </h2>
             </div>
         </div>
     </div>
 
-    <div class="row">
+    <!-- <div class="row">
         <div class="box">
             <div class="col-lg-12">
                 <hr>
@@ -117,7 +130,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- /.container -->
 
 
@@ -131,7 +144,7 @@
 <!-- Script to Activate the Carousel -->
 <script>
 $('.carousel').carousel({
-    interval: 3500 //changes the speed
+    interval: 10000 //changes the speed
 })
 </script>
 </div>

@@ -4,10 +4,10 @@ Rails.application.routes.draw do
   resources :model
   # get '/dealership/cars' => 'cars#index'
   # get '/dealership/cars/category' => 'categoty#index'
+  root 'category#index'
   get '/dealership/' => 'category#index'
   get '/dealership/category' => 'category#cat_make'
   get '/dealership/category/make/model_id' => 'model#show' #not sure about the path
-  root 'category#index'
   # get '/dealership/category/make' => 'make#index'
   # get '/dealership/category/make/model' => 'model#show'
 
