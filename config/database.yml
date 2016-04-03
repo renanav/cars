@@ -12,7 +12,7 @@ development:
   adapter: postgresql
   host: localhost
   # username: app_name
-  # database: app-dev
+  database: app-dev
 # development:
 #   <<: *default
 #   database: cars_development
