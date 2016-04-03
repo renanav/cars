@@ -25,15 +25,16 @@
 }
 
 #case-3-background{
-  background-image: url("hhttps://s3.amazonaws.com/railscars/super-sport-background.jpg");
+  background-image: url("https://s3.amazonaws.com/railscars/super-sport-background.jpg");
   background-size:100% 100%;
 }
 
 #case-4-background{
-  background-image: url("https://s3.amazonaws.com/renansbucket/super-saloon-background.jpg");
+  background-image: url("https://s3.amazonaws.com/railscars/super-saloon-background.jpg");
   background-size:100% 100%;
 }
 
+// Homepage carousel images
 #sport-1{
   content: url("https://s3.amazonaws.com/railscars/sport_1.jpg");
 }
@@ -59,7 +60,7 @@
 }
 
 #terrain-2{
-  content: url("https://s3.amazonaws.com/railscars/terrain_2.jpg");
+  content: url("https://s3.amazonaws.com/railscars/terrain_5.jpg");
 }
 
 #luxury-3{

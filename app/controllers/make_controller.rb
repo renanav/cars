@@ -20,8 +20,8 @@ class MakeController < ApplicationController
         end
   end
 
-  def all
-    @all_makes=make.all
+  def all_makes
+    @all_makes=Make.all
   end
 
   def show
