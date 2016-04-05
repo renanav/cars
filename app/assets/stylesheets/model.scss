@@ -148,13 +148,26 @@
 .car-display{
   // height: auto;
   // width: auto;
-  max-width: 45vw;
-  max-height: 60%;
+  width: 45vw;
+  height: 50vh;
+  border: 1px black solid;
+  // max-height: 60%;
   position: relative;
+  float: left;
+  margin-left: 3%;
+  margin-top: 4%;
 
 }
 
 #car-description{
+  width: 45vw;
+  height: 50vh;
+  border: 1px black solid;
+  float: right;
+  position: relative;
+  margin-right: 3%;
+  margin-top: 4%;
+
 }
 
 #background {
