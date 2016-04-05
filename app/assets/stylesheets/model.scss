@@ -145,6 +145,11 @@
   content: url("https://s3.amazonaws.com/railscars/aston_martin_rapide_s.jpg");
 }
 
+#model-name{
+  position:relative;
+  text-align: center;
+}
+
 .car-display{
   // height: auto;
   // width: auto;
