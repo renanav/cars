@@ -41,12 +41,17 @@ color: black;
 font-weight: bold;
 }
 
-#category-selector{
+/*#category-selector{
   margin-left: 25%;
   margin-right: 25%;
-}
+}*/
 
 #bs-example-navbar-collapse-1{
   margin-right: 25%;
   margin-left: 25%;
 }
+/*
+.top-bar{
+  margin-right: 25%;
+  margin-left: 32%;
+}*/
