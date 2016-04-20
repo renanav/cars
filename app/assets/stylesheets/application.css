@@ -41,6 +41,10 @@ color: white !important;
 font-weight: bold;
 }
 
+.top-welcome-page {
+  color: black !important; 
+}
+
 #category-selector{
   padding-left: 13%;
   padding-right: 10%;
