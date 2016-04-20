@@ -42,7 +42,7 @@ font-weight: bold;
 }
 
 .top-welcome-page {
-  color: black !important; 
+  color: black !important;
 }
 
 #category-selector{
@@ -54,6 +54,7 @@ font-weight: bold;
 #bs-example-navbar-collapse-1{
   margin-right: 25%;
   margin-left: 25%;
+  padding-top: 3%;
 }
 /*
 .top-bar{

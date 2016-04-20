@@ -4,21 +4,35 @@
 <h1> Please choose a make for your car </h1>
 <!-- Collect the nav links, forms, and other content for toggling -->
 <div class="collapse navbar-collapse top-bar" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav">
-        <li>
-            <a href="/">Home</a>
-        </li>
-        <li>
-            <a href="/dealership/category/make">Makes</a>
-        </li>
-        <li>
-            <a href="blog.html">Blog</a>
-        </li>
-        <li>
-            <a href="contact.html">Contact</a>
-        </li>
-    </ul>
+    <!-- <ul class="nav navbar-nav"> -->
+        <!-- <li> -->
+        <div class="row">
+          <div class="col-md-3">
+            <button class="btn btn-lg btn-secondary btn-block"><a href="/">Home</a></button>
+          </div>
+        <!-- </li> -->
+        <!-- <li> -->
+        <div class="col-md-3">
+            <button class="btn btn-lg btn-secondary btn-block"><a href="/dealership/category/make">Makes</a></button>
+        </div>
+
+        <!-- </li> -->
+        <!-- <li> -->
+        <div class="col-md-3">
+            <button class="btn btn-lg btn-secondary btn-block"><a href="blog.html">Models</a></button>
+        </div>
+
+        <!-- </li> -->
+        <!-- <li> -->
+        <div class="col-md-3">
+            <button class="btn btn-lg btn-secondary btn-block"><a href="contact.html">My Portfolio</a></button>
+        </div>
+
+        <!-- </li> -->
+      </div>
+    <!-- </ul> -->
 </div>
+
 
 <!-- Present a different background for each chosen make's body page -->
 <% case @make.name %>
