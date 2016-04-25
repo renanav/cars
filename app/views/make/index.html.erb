@@ -4,33 +4,20 @@
 <h1> Please choose a make for your car </h1>
 <!-- Collect the nav links, forms, and other content for toggling -->
 <div class="collapse navbar-collapse top-bar" id="bs-example-navbar-collapse-1">
-    <!-- <ul class="nav navbar-nav"> -->
-        <!-- <li> -->
         <div class="row">
           <div class="col-md-3">
             <button class="btn btn-lg btn-secondary btn-block"><a href="/">Home</a></button>
           </div>
-        <!-- </li> -->
-        <!-- <li> -->
         <div class="col-md-3">
             <button class="btn btn-lg btn-secondary btn-block"><a href="/dealership/category/make">Makes</a></button>
         </div>
-
-        <!-- </li> -->
-        <!-- <li> -->
         <div class="col-md-3">
             <button class="btn btn-lg btn-secondary btn-block"><a href="blog.html">Models</a></button>
         </div>
-
-        <!-- </li> -->
-        <!-- <li> -->
         <div class="col-md-3">
             <button class="btn btn-lg btn-secondary btn-block"><a href="contact.html">My Portfolio</a></button>
         </div>
-
-        <!-- </li> -->
       </div>
-    <!-- </ul> -->
 </div>
 
 
@@ -70,18 +57,13 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <div class="row">
-            <!-- <ul id="buttom-nav-bar" class="nav navbar-nav"> -->
-                <!-- <li> -->
                   <% @make_models.each do |model| %>
                   <div class="col-md-4">
                     <button class="btn btn-lg btn-secondary btn-block">
                       <%= link_to model.name, model%>
                     </button>
                   </div>
-
-                    <% end %>
-                <!-- </li> -->
-            <!-- </ul> -->
+                  <% end %>
           </div>
         </div>
         <!-- /.navbar-collapse -->
