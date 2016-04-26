@@ -7,33 +7,20 @@
 
 <!-- Collect the nav links, forms, and other content for toggling -->
 <div class="collapse navbar-collapse top-bar" id="bs-example-navbar-collapse-1">
-    <!-- <ul class="nav navbar-nav"> -->
-        <!-- <li> -->
         <div class="row">
           <div class="col-md-3">
             <button class="btn btn-lg btn-secondary btn-block"><a href="/">Home</a></button>
           </div>
-        <!-- </li> -->
-        <!-- <li> -->
         <div class="col-md-3">
             <button class="btn btn-lg btn-secondary btn-block"><a href="/dealership/category/make">Makes</a></button>
         </div>
-
-        <!-- </li> -->
-        <!-- <li> -->
         <div class="col-md-3">
             <button class="btn btn-lg btn-secondary btn-block"><a href="blog.html">Models</a></button>
         </div>
-
-        <!-- </li> -->
-        <!-- <li> -->
         <div class="col-md-3">
             <button class="btn btn-lg btn-secondary btn-block"><a href="contact.html">My Portfolio</a></button>
         </div>
-
-        <!-- </li> -->
       </div>
-    <!-- </ul> -->
 </div>
 
 
@@ -42,12 +29,12 @@
 <div>
   <% case @models.model_id %>
     <% when 1 %>
-    <%= image_tag ("audi_s8_plus.jpeg"), :class=>"car-display" %>
-      <!-- <img class="car-display" id="s8-plus"> -->
+    <!-- <%= image_tag ("audi_s8_plus.jpeg"), :class=>"car-display" %> -->
+      <img class="car-display" id="s8-plus">
       <div id="car-description">CASE 1 DESCRIPTION </div>
     <% when 2 %>
-      <%= image_tag ("audi_s7.jpeg"), :class=>"car-display" %>
-      <!-- <img class="car-display" id="rs-7"> -->
+      <!-- <%= image_tag ("audi_s7.jpeg"), :class=>"car-display" %> -->
+      <img class="car-display" id="rs-7">
       <div id="car-description">CASE 2 DESCRIPTION </div>
     <% when 3 %>
       <img class="car-display" id="s7">
