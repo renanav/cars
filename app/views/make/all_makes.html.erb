@@ -2,6 +2,6 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 
 <% @all_makes.each do |allMakesDisplay| %>
-  <%= link_to allMakesDisplay, all_makes%>
+  <%= link_to allMakesDisplay.name all_makes %>
 
   <% end %>
