@@ -1,5 +1,6 @@
 class CategoryController < ApplicationController
-
+include ApplicationHelper
+  
 def index
   @categories = Category.all
 end
