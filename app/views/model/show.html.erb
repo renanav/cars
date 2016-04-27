@@ -31,157 +31,208 @@
     </div>
   </div>
 
-  <p id="model-name">
+  <h2 id="model-name">
     <%= @models.name %>
-  </p>
+  </h2>
 
   <div>
     <% case @models.model_id %>
     <% when 1 %>
     <%= image_tag ("audi_s8_plus.jpeg"), :class=>"car-display" %>
     <!-- <img class="car-display" id="s8-plus"> -->
-    <div id="car-description">CASE 1 DESCRIPTION
+    <div class="car-description">
+      <ul>
+        <li>With a turbocharged 605-hp TFSI engine, legendary quattro® sport all-wheel drive and standard sport differential, the S8 plus is the performance luxury sedan that's out in front.</li>
+        <li>With legendary quattro all-wheel drive, the S8 plus sends power to the wheels with the most grip, helping to maximize handling performance on virtually any road. Top it off with a torque-vectoring rear sport differential and you'll see how the power and performance of the S8 plus can really stick.</li>
+        <li>Behind the wheel of the S8 plus, you can. The cockpit brings a fully connected experience with sophisticated systems at your fingertips that make the built-in technological genius an extension of who you are</li>
+        <li>Starting at $114,900</li>
+      </ul>
     </div>
     <% when 2 %>
-    <%= image_tag ("audi_s7.jpeg"), :class=>"car-display" %>
+    <%= image_tag ("audi_rs7.jpeg"), :class=>"car-display" %>
     <!-- <img class="car-display" id="rs-7"> -->
-    <div id="car-description">CASE 2 DESCRIPTION
+    <div class="car-description">
+      <ul>
+        <li>Some monsters are real. Take the turbocharged 560-hp TFSI V8 engine — and the astonishing 605-hp TFSI in the RS 7 performance model — plus quattro all-wheel drive with sport differential and incomparable luxury amenities, and you'll see the Audi RS 7 delivers performance that leaves even sports cars envious.</li>
+        <li>Go ahead, stop traffic. The RS 7 and RS 7 performance can't help itself from being a showstopper. And you might not be able to help yourself from coveting its stunning form.</li>
+        <li>Witness a roaring performance. The RS 7 performance is capable of feats that can astonish even the most seasoned driver. With a 605-hp TFSI engine that has a top track speed of 190 mph, sport exhaust, Audi dynamic ride control suspension and a Carbon Optic design package, you'll see that these are the things that legends are made of.</li>
+        <li>Starting at $108,900</li>
+      </ul>
     </div>
     <% when 3 %>
-    <img class="car-display" id="s7">
-    <div id="car-description">CASE 3 DESCRIPTION
-    </div>
+    <%= image_tag ("audi_s7.jpeg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="s7"> -->
+    <div class="car-description">
+      <ul>
+        <li>When we designed the Audi S7, we upped the ante with aggressive styling and exceptional handling. And with its turbocharged 450-hp TFSI V8 engine, you can make a quick escape from convention.</li>
+        <li>Bold. Sophisticated. Powerful. Every inch of the S7, stretching from the Singleframe® grille to the sloping coupe-like roofline, is an artistic expression of sporty performance.</li>
+        <li>We love making things work in concert. From the thrust of its 450-hp TFSI V8 engine to its Audi adaptive air suspension and available dynamic steering, the S7 delivers one unforgettable performance.</li>
+        <li>Starting at $82,900</li>
+      </ul>
     <% when 4 %>
-    <img class="car-display" id="amg-s65">
-    <div id="car-description">CASE 4 DESCRIPTION
+    <%= image_tag ("mercedes_amg_s65.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="amg-s65"> -->
+    <div class="car-description">CASE 4 DESCRIPTION
     </div>
     <% when 5 %>
-    <img class="car-display" id="amg-s63">
-    <div id="car-description">CASE 5 DESCRIPTION
+    <%= image_tag ("mercedes_amg_s63.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="amg-s63"> -->
+    <div class="car-description">CASE 5 DESCRIPTION
     </div>
     <% when 6 %>
-    <img class="car-display" id="s600">
-    <div id="car-description">CASE 6 DESCRIPTION
+    <%= image_tag ("mercedes_s600.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="s600"> -->
+    <div class="car-description">CASE 6 DESCRIPTION
     </div>
     <% when 7 %>
-    <img class="car-display" id="ls-hybrid">
-    <div id="car-description">CASE 7 DESCRIPTION
+    <%= image_tag ("lexus_ls_hybrid.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="ls-hybrid"> -->
+    <div class="car-description">CASE 7 DESCRIPTION
     </div>
     <% when 8 %>
-    <img class="car-display" id="ls">
-    <div id="car-description">CASE 8 DESCRIPTION
+    <%= image_tag ("lexus_ls.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="ls"> -->
+    <div class="car-description">CASE 8 DESCRIPTION
     </div>
     <% when 9 %>
-    <img class="car-display" id="gsf">
-    <div id="car-description">CASE 9 DESCRIPTION
+    <%= image_tag ("lexus_gsf.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="gsf"> -->
+    <div class="car-description">CASE 9 DESCRIPTION
     </div>
     <% when 10 %>
-    <img class="car-display" id="sv-autobiography">
-    <div id="car-description">CASE 10 DESCRIPTION
+    <%= image_tag ("land_rover_sv_autobiography.png"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="sv-autobiography"> -->
+    <div class="car-description">CASE 10 DESCRIPTION
     </div>
     <% when 11 %>
-    <img class="car-display" id="supercharged">
-    <div id="car-description">CASE 11 DESCRIPTION
+    <%= image_tag ("land_rover_supercharged.png"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="supercharged"> -->
+    <div class="car-description">CASE 11 DESCRIPTION
     </div>
     <% when 12 %>
-    <img class="car-display" id="hse">
-    <div id="car-description">CASE 12 DESCRIPTION
+    <%= image_tag ("land_rover_hse.png"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="hse"> -->
+    <div class="car-description">CASE 12 DESCRIPTION
     </div>
     <% when 13 %>
-    <img class="car-display" id="x6-m">
-    <div id="car-description">CASE 13 DESCRIPTION
+    <%= image_tag ("bmw_x6M.png"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="x6-m"> -->
+    <div class="car-description">CASE 13 DESCRIPTION
     </div>
     <% when 14 %>
-    <img class="car-display" id="x5-m">
-    <div id="car-description">CASE 14 DESCRIPTION
+    <%= image_tag ("bmw_x5M.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="x5-m"> -->
+    <div class="car-description">CASE 14 DESCRIPTION
     </div>
     <% when 15 %>
-    <img class="car-display" id="x4-m40i">
-    <div id="car-description">CASE 15 DESCRIPTION
+    <%= image_tag ("bmw_x4_m40i.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="x4-m40i"> -->
+    <div class="car-description">CASE 15 DESCRIPTION
     </div>
     <% when 16 %>
-    <img class="car-display" id="cayenne-turbo-s">
-    <div id="car-description">CASE 16 DESCRIPTION
+    <%= image_tag ("porsche_cayenne_turbo_s.jpeg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="cayenne-turbo-s"> -->
+    <div class="car-description">CASE 16 DESCRIPTION
     </div>
     <% when 17 %>
-    <img class="car-display" id="cayenne-turbo">
-    <div id="car-description">CASE 17 DESCRIPTION
+    <%= image_tag ("porsche_cayenne_turbo.jpeg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="cayenne-turbo"> -->
+    <div class="car-description">CASE 17 DESCRIPTION
     </div>
     <% when 18 %>
-    <img class="car-display" id="macan">
-    <div id="car-description">CASE 18 DESCRIPTION
+    <%= image_tag ("porsche_macan.jpeg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="macan"> -->
+    <div class="car-description">CASE 18 DESCRIPTION
     </div>
     <% when 19 %>
-    <img class="car-display" id="california">
-    <div id="car-description">CASE 19 DESCRIPTION
+    <%= image_tag ("ferrari_california.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="california"> -->
+    <div class="car-description">CASE 19 DESCRIPTION
     </div>
     <% when 20 %>
-    <img class="car-display" id="gtb-488-gtb">
-    <div id="car-description">CASE 20 DESCRIPTION
+    <%= image_tag ("errari_488_gtb.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="gtb-488-gtb"> -->
+    <div class="car-description">CASE 20 DESCRIPTION
     </div>
     <% when 21 %>
-    <img class="car-display" id="la-ferrari">
-    <div id="car-description">CASE 21 DESCRIPTION
+    <%= image_tag ("ferrari_la_ferrari.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="la-ferrari"> -->
+    <div class="car-description">CASE 21 DESCRIPTION
     </div>
     <% when 22 %>
-    <img class="car-display" id="veneno-roadster">
-    <div id="car-description">CASE 22 DESCRIPTION
+    <%= image_tag ("lamborghini_venono_roadster.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="veneno-roadster"> -->
+    <div class="car-description">CASE 22 DESCRIPTION
     </div>
     <% when 23 %>
-    <img class="car-display" id="aventador-superveloce-roadster">
-    <div id="car-description">CASE 23 DESCRIPTION
+    <%= image_tag ("lamborghini_aventador_superveloce_roadster.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="aventador-superveloce-roadster"> -->
+    <div class="car-description">CASE 23 DESCRIPTION
     </div>
     <% when 24 %>
-    <img class="car-display" id="huracan">
-    <div id="car-description">CASE 24 DESCRIPTION
+    <%= image_tag ("lamborghini_huracan.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="huracan"> -->
+    <div class="car-description">CASE 24 DESCRIPTION
     </div>
     <% when 25 %>
-    <img class="car-display" id="veyron-16-4">
-    <div id="car-description">CASE 25 DESCRIPTION
+    <%= image_tag ("bugatti_veyron_16.4.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="veyron-16-4"> -->
+    <div class="car-description">CASE 25 DESCRIPTION
     </div>
     <% when 26 %>
-    <img class="car-display" id="veyron-16-4-grand-sport">
-    <div id="car-description">CASE 26 DESCRIPTION
+    <%= image_tag ("bugatti_veyron_16.4_grand_sport.jpg"), :class=>"car-display" %>
+      <!-- <img class="car-display" id="veyron-16-4-grand-sport"> -->
+    <div class="car-description">CASE 26 DESCRIPTION
     </div>
     <% when 27 %>
-    <img class="car-display" id="veyron-16-4-grand-sport-vitesse">
-    <div id="car-description">CASE 27 DESCRIPTION
+    <%= image_tag ("bugatti_veyron_16.4_grand_sport_vitesse.jpg"), :class=>"car-display" %>
+      <!-- <img class="car-display" id="veyron-16-4-grand-sport-vitesse"> -->
+    <div class="car-description">CASE 27 DESCRIPTION
     </div>
     <% when 28 %>
-    <img class="car-display" id="ghost">
-    <div id="car-description">CASE 28 DESCRIPTION
+    <%= image_tag ("rolls_royce_ghost.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="ghost"> -->
+    <div class="car-description">CASE 28 DESCRIPTION
     </div>
     <% when 29 %>
-    <img class="car-display" id="phantom">
-    <div id="car-description">CASE 29 DESCRIPTION
+    <%= image_tag ("rolls_royce_phantom.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="phantom"> -->
+    <div class="car-description">CASE 29 DESCRIPTION
     </div>
     <% when 30 %>
-    <img class="car-display" id="wraith">
-    <div id="car-description">CASE 30 DESCRIPTION
+    <%= image_tag ("rolls_royce_wraith.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="wraith"> -->
+    <div class="car-description">CASE 30 DESCRIPTION
     </div>
     <% when 31 %>
-    <img class="car-display" id="mulsanne">
-    <div id="car-description">CASE 31 DESCRIPTION
+    <%= image_tag ("bentley_mulsanne.png"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="mulsanne"> -->
+    <div class="car-description">CASE 31 DESCRIPTION
     </div>
     <% when 32 %>
-    <img class="car-display" id="continental-gt3r">
-    <div id="car-description">CASE 32 DESCRIPTION
+    <%= image_tag ("bentley_continental_gt3r.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="continental-gt3r"> -->
+    <div class="car-description">CASE 32 DESCRIPTION
     </div>
     <% when 33 %>
-    <img class="car-display" id="flying-spur">
-    <div id="car-description">CASE 33 DESCRIPTION
+    <%= image_tag ("bentley_flying_spur.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="flying-spur"> -->
+    <div class="car-description">CASE 33 DESCRIPTION
     </div>
     <% when 34 %>
-    <img class="car-display" id="db9-volante">
-    <div id="car-description">CASE 34 DESCRIPTION
+    <%= image_tag ("aston_martin_db9_volante.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="db9-volante"> -->
+    <div class="car-description">CASE 34 DESCRIPTION
     </div>
     <% when 35 %>
-    <img class="car-display" id="vanquish-carbon-edition">
-    <div id="car-description">CASE 35 DESCRIPTION
+    <%= image_tag ("aston_martin_vanquish_carbon_edition.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="vanquish-carbon-edition"> -->
+    <div class="car-description">CASE 35 DESCRIPTION
     </div>
     <% when 36 %>
-    <img class="car-display" id="rapide-s">
-    <div id="car-description">CASE 36 DESCRIPTION
+    <%= image_tag ("aston_martin_rapide_s.jpg"), :class=>"car-display" %>
+    <!-- <img class="car-display" id="rapide-s"> -->
+    <div class="car-description">CASE 36 DESCRIPTION
     </div>
 
     <%end %>
