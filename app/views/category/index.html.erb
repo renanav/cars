@@ -2,6 +2,8 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 <div class="container-fluid">
 <div id="categoryIndexBackground">
+  <%= image_tag ("speed-background.png") %>
+</div>
 <% id = 1 %>
 <% @categories.each do |cat| %>
   <% link_to cat.name, dealership_category_path(cat_id: id) %>
@@ -162,4 +164,3 @@ $('.carousel').carousel({
     interval: 10000 //changes the speed
 })
 </script>
-</div>
