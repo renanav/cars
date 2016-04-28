@@ -1,34 +1,42 @@
-<div class="collapse navbar-collapse top-bar" id="bs-example-navbar-collapse-1">
-        <div class="row">
-          <div class="col-md-3">
-            <button class="btn btn-lg btn-secondary btn-block">
-              <a href="/">Home</a>
-            </button>
-          </div>
-          <div class="col-md-3">
-            <div class="dropdown">
-              <button class="btn btn-lg btn-secondary btn-block">
-                <a href="/dealership/category/make">Makes</a>
-                <!-- To make a small arrow in a drop down menu -->
-                <!-- <span class="caret"></span> -->
-              </button>
-              <%# @all_makes.each do |allMakesDisplay| %>
-                <a id="allMakesDisplay">
-                  <%#= link_to allMakesDisplay.name, dealership_category_make_path(allMakesDisplay) %>
-                </a>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 
-                <%# end %>
-            </div>
-          </div>
-          <div class="col-md-3">
-              <button class="btn btn-lg btn-secondary btn-block">
-                <a href="blog.html">Models</a>
-              </button>
-          </div>
-          <div class="col-md-3">
-              <button class="btn btn-lg btn-secondary btn-block">
-                <a href="contact.html">My Portfolio</a>
-              </button>
-          </div>
+<div class="collapse navbar-collapse top-bar" id="bs-example-navbar-collapse-1">
+  <div class="row">
+    <div class="col-md-3">
+      <button class="btn btn-lg btn-secondary btn-block">
+        <a href="/">Home</a>
+      </button>
+    </div>
+    <div class="col-md-3">
+      <div class="dropdown">
+        <button class="btn btn-lg btn-secondary btn-block">
+          <a href="/dealership/category/make"> Makes</a>
+          <span class="caret"></span>
+        </button>
+        <ul id="makers-button-makers-list" class="dropdown-menu">
+          <% @all_makes.each do |allMakesDisplay| %>
+          <li><%= link_to allMakesDisplay.name, make_index_path(make_name: allMakesDisplay.name) %></li>
+          <% end %>
+        </ul>
       </div>
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-lg btn-secondary btn-block">
+        <a href="blog.html">Models</a>
+      </button>
+    </div>
+    <div class="col-md-3">
+      <button class="btn btn-lg btn-secondary btn-block">
+        <a href="contact.html">My Portfolio</a>
+      </button>
+    </div>
+  </div>
+
 </div>
+
+<!-- jQuery -->
+<!-- <script src="js/jquery.js"></script> -->
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/partial.js"></script>
