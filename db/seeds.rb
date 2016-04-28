@@ -1,8 +1,8 @@
 Category.create!([
-  {name: "sedan", category_id: 1},
-  {name: "suv", category_id: 2},
-  {name: "super_sport", category_id: 3},
-  {name: "super_saloon", category_id: 4}
+  {name: "Sedan", category_id: 1},
+  {name: "Suv", category_id: 2},
+  {name: "Super Sport", category_id: 3},
+  {name: "Super Saloon", category_id: 4}
 ])
 
 Dealership.create!([
@@ -43,22 +43,22 @@ Model.create!([
   {name: "Cayenne Turbo S", model_id: 16, make_id: 12, category_id: 2, image: "porsche_cayenne_turbo_s"},
   {name: "Cayenne Turbo", model_id: 17, make_id: 12, category_id: 2, image: "porsche_cayenne_turbo"},
   {name: "Macan", model_id: 18, make_id: 12, category_id: 2, image: "porsche_macan"},
-  {name: "california", model_id: 19, make_id: 6, category_id: 3, image: "ferrari_california"},
-  {name: "488 gtb", model_id: 20, make_id: 6, category_id: 3, image: "ferrari_488_gtb"},
-  {name: "la ferrari", model_id: 21, make_id: 6, category_id: 3, image: "ferrari_la_ferrari"},
-  {name: "veneno roadster", model_id: 22, make_id: 7, category_id: 3, image: "lamborghini_veneno_roadster"},
-  {name: "aventador superveloce roadster", model_id: 23, make_id: 7, category_id: 3, image: "lamborghini_aventador_superveloce_roadster"},
-  {name: "huracan", model_id: 24, make_id: 7, category_id: 3, image: "lamborghini_huracan"},
-  {name: "veyron 16.4", model_id: 25, make_id: 8, category_id: 3, image: "bugatti_veyron_16.4"},
-  {name: "veyron 16.4 grand sport", model_id: 26, make_id: 8, category_id: 3, image: "bugatti_veyron_16.4_grand_sport"},
-  {name: "veyron 16.4 grand sport vitesse", model_id: 27, make_id: 8, category_id: 3, image: "bugatti_veyron_16.4_grand_sport_vitesse"},
-  {name: "ghost", model_id: 28, make_id: 9, category_id: 4, image: "rolls_royce_ghost"},
-  {name: "phantom", model_id: 29, make_id: 9, category_id: 4, image: "rolls_royce_phantom"},
-  {name: "wraith", model_id: 30, make_id: 9, category_id: 4, image: "rolls_royce_wraith"},
-  {name: "mulsanne", model_id: 31, make_id: 10, category_id: 4, image: "bentley_mulsanne"},
-  {name: "continental gt3r", model_id: 32, make_id: 10, category_id: 4, image: "bentley_continental_gt3r"},
-  {name: "flying spur", model_id: 33, make_id: 10, category_id: 4, image: "bentley_flying_spur"},
-  {name: "db9 volante", model_id: 34, make_id: 11, category_id: 4, image: "aston_martin_db9_volante"},
-  {name: "vanquish carbon edition", model_id: 35, make_id: 11, category_id: 4, image: "aston_martin_vanquish_carbon_edition"},
-  {name: "rapide s", model_id: 36, make_id: 11, category_id: 4, image: "aston_martin_rapide_s"}
+  {name: "California", model_id: 19, make_id: 6, category_id: 3, image: "ferrari_california"},
+  {name: "488 GTB", model_id: 20, make_id: 6, category_id: 3, image: "ferrari_488_gtb"},
+  {name: "La Ferrari", model_id: 21, make_id: 6, category_id: 3, image: "ferrari_la_ferrari"},
+  {name: "Veneno Roadster", model_id: 22, make_id: 7, category_id: 3, image: "lamborghini_veneno_roadster"},
+  {name: "Aventador Superveloce Roadster", model_id: 23, make_id: 7, category_id: 3, image: "lamborghini_aventador_superveloce_roadster"},
+  {name: "Huracan", model_id: 24, make_id: 7, category_id: 3, image: "lamborghini_huracan"},
+  {name: "Veyron 16.4", model_id: 25, make_id: 8, category_id: 3, image: "bugatti_veyron_16.4"},
+  {name: "Veyron 16.4 Grand Sport", model_id: 26, make_id: 8, category_id: 3, image: "bugatti_veyron_16.4_grand_sport"},
+  {name: "Veyron 16.4 Grand Sport Vitesse", model_id: 27, make_id: 8, category_id: 3, image: "bugatti_veyron_16.4_grand_sport_vitesse"},
+  {name: "Ghost", model_id: 28, make_id: 9, category_id: 4, image: "rolls_royce_ghost"},
+  {name: "Phantom", model_id: 29, make_id: 9, category_id: 4, image: "rolls_royce_phantom"},
+  {name: "Wraith", model_id: 30, make_id: 9, category_id: 4, image: "rolls_royce_wraith"},
+  {name: "Mulsanne", model_id: 31, make_id: 10, category_id: 4, image: "bentley_mulsanne"},
+  {name: "Continental GT3R", model_id: 32, make_id: 10, category_id: 4, image: "bentley_continental_gt3r"},
+  {name: "Flying Spur", model_id: 33, make_id: 10, category_id: 4, image: "bentley_flying_spur"},
+  {name: "DB9 Volante", model_id: 34, make_id: 11, category_id: 4, image: "aston_martin_db9_volante"},
+  {name: "Vanquish Carbon Edition", model_id: 35, make_id: 11, category_id: 4, image: "aston_martin_vanquish_carbon_edition"},
+  {name: "Rapide S", model_id: 36, make_id: 11, category_id: 4, image: "aston_martin_rapide_s"}
 ])
