@@ -2,40 +2,11 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 
 <!-- Collect the nav links, forms, and other content for toggling -->
-<div class="collapse navbar-collapse top-bar" id="bs-example-navbar-collapse-1">
-        <div class="row">
-          <div class="col-md-3">
-            <button class="btn btn-lg btn-secondary btn-block">
-              <a href="/">Home</a>
-            </button>
-          </div>
-          <div class="col-md-3">
-            <div class="dropdown">
-              <button class="btn btn-lg btn-secondary btn-block">
-                <a href="/dealership/category/make">Makes</a>
-                <!-- To make a small arrow in a drop down menu -->
-                <!-- <span class="caret"></span> -->
-              </button>
-              <%# @all_makes.each do |allMakesDisplay| %>
-                <a id="allMakesDisplay">
-                  <%#= link_to allMakesDisplay.name, dealership_category_make_path(allMakesDisplay) %>
-                </a>
 
-                <%# end %>
-            </div>
-          </div>
-          <div class="col-md-3">
-              <button class="btn btn-lg btn-secondary btn-block">
-                <a href="blog.html">Models</a>
-              </button>
-          </div>
-          <div class="col-md-3">
-              <button class="btn btn-lg btn-secondary btn-block">
-                <a href="contact.html">My Portfolio</a>
-              </button>
-          </div>
-      </div>
-</div>
+<!-- This calls the _partial from the layouts view, it contains the buttons
+row, that way I won't have to type the entire row in every view,
+just call the _partial -->
+<%= render 'layouts/partial' %>
 
 <!-- this will display a different background for each chosen category's body page, this one should eventually be in the category helper -->
 <% case @cat.id %>
