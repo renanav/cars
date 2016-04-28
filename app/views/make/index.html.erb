@@ -1,24 +1,11 @@
 <!-- For responsiveness -->
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
 
-<h1> Please choose a make for your car </h1>
+<h1> Please choose a car model </h1>
 <!-- Collect the nav links, forms, and other content for toggling -->
-<div class="collapse navbar-collapse top-bar" id="bs-example-navbar-collapse-1">
-        <div class="row">
-          <div class="col-md-3">
-            <button class="btn btn-lg btn-secondary btn-block"><a href="/">Home</a></button>
-          </div>
-        <div class="col-md-3">
-            <button class="btn btn-lg btn-secondary btn-block"><a href="/dealership/category/make">Makes</a></button>
-        </div>
-        <div class="col-md-3">
-            <button class="btn btn-lg btn-secondary btn-block"><a href="blog.html">Models</a></button>
-        </div>
-        <div class="col-md-3">
-            <button class="btn btn-lg btn-secondary btn-block"><a href="contact.html">My Portfolio</a></button>
-        </div>
-      </div>
-</div>
+<!-- The line below calls the partial from layouts, it contains the top line of buttons -->
+<%= render "layouts/partial" %>
+
 
 
 <!-- Present a different background for each chosen make's body page -->
