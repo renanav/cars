@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+<script type="text/javascript"> $(document).ready(function () { $('.dropdown-toggle').dropdown(); }); </script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
 
 <div class="collapse navbar-collapse top-bar" id="bs-example-navbar-collapse-1">
   <div class="row">
@@ -9,7 +12,7 @@
     </div>
     <div class="col-md-3">
       <div class="dropdown">
-        <button id="dLabel1" data-toggle="dropdown" type="button" class="btn btn-lg btn-secondary btn-block dropdown-toggle" aria-haspopup="true" role="button" aria-expanded="false">Makes
+        <button id="dLabel1" data-toggle="dropdown" type="button" class="btn btn-lg btn-secondary btn-block dropdown-toggle" aria-haspopup="true" aria-expanded="false" role="button">Makes
           <span class="caret"></span>
         </button>
         <ul id="makers-button-makers-list" class="dropdown-menu" role="menu" aria-labelledby="dLabel1">
@@ -35,7 +38,17 @@
 
 <!-- jQuery -->
 <!-- <script src="js/jquery.js"></script> -->
-<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
 <!-- Bootstrap Core JavaScript -->
-<script src="js/partial.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Bootstrap local JavaScript-->
+    <!-- script src="js/bootstrap.min.js"></script -->
+
+    <!-- Bootstrap CDN JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <!-- My custom JavaScript -->
+    <script src="bootstrap.js"></script>
+    <script src="js/partial.js"></script>
