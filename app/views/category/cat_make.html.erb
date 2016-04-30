@@ -11,9 +11,15 @@ just call the _partial -->
 <!-- this will display a different background for each chosen category's body page, this one should eventually be in the category helper -->
 <% case @cat.id %>
   <% when 1 %>
-    <body id="case-1-background">
+  <!-- <div class="category-background"> -->
+  <%= image_tag "sedan-background.jpg", :class=>"category-background"%>
+    <!-- <body id="case-1-background"> -->
+  </div>
   <% when 2 %>
-    <body id="case-2-background">
+  <!-- <div class="category-background"> -->
+    <!-- <body id="case-2-background"> -->
+      <%= image_tag "terrain_1.jpg", :class=>"category-background"%>
+    <!-- </div> -->
   <% when 3 %>
     <body id="case-3-background">
   <% when 4 %>
