@@ -13,4 +13,8 @@ class ApplicationController < ActionController::Base
     @all_makes=Make.all
   end
 
+  def show_all_models
+    @all_models=Model.all
+  end
+  
 end

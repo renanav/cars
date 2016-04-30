@@ -1,7 +1,10 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
-<script type="text/javascript"> $(document).ready(function () { $('.dropdown-toggle').dropdown(); }); </script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('.dropdown-toggle').dropdown();
+  });
+</script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-
 
 <div class="collapse navbar-collapse top-bar" id="bs-example-navbar-collapse-1">
   <div class="row">
@@ -15,7 +18,21 @@
         <button id="dLabel1" data-toggle="dropdown" type="button" class="btn btn-lg btn-secondary btn-block dropdown-toggle" aria-haspopup="true" aria-expanded="false" role="button">Makes
           <span class="caret"></span>
         </button>
-        <ul id="makers-button-makers-list" class="dropdown-menu" role="menu" aria-labelledby="dLabel1">
+        <ul id="makers-and-models-button-list" class="dropdown-menu" role="menu" aria-labelledby="dLabel1">
+          <% @all_makes.each do |allMakesDisplay| %>
+          <li><%= link_to allMakesDisplay.name, make_index_path(make_name: allMakesDisplay.name) %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="dropdown">
+        <button id="dLabel1" data-toggle="dropdown" type="button" class="btn btn-lg btn-secondary btn-block dropdown-toggle" aria-haspopup="true" aria-expanded="false" role="button">Models
+          <!-- <button class="btn btn-lg btn-secondary btn-block"> -->
+          <span class="caret"></span>
+          <!-- <a href="blog.html">Models</a> -->
+        </button>
+        <ul id="makers-and-models-button-list" class="dropdown-menu" role="menu" aria-labelledby="dLabel1">
           <% @all_makes.each do |allMakesDisplay| %>
           <li><%= link_to allMakesDisplay.name, make_index_path(make_name: allMakesDisplay.name) %></li>
           <% end %>
@@ -24,16 +41,10 @@
     </div>
     <div class="col-md-3">
       <button class="btn btn-lg btn-secondary btn-block">
-        <a href="blog.html">Models</a>
-      </button>
-    </div>
-    <div class="col-md-3">
-      <button class="btn btn-lg btn-secondary btn-block">
         <a target="blank" href="http://www.renan-avrahami.co/">My Portfolio</a>
       </button>
     </div>
   </div>
-
 </div>
 
 <!-- jQuery -->
@@ -41,14 +52,14 @@
 <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
 <!-- Bootstrap Core JavaScript -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-    <!-- Bootstrap local JavaScript-->
-    <!-- script src="js/bootstrap.min.js"></script -->
+<!-- Bootstrap local JavaScript-->
+<!-- script src="js/bootstrap.min.js"></script -->
 
-    <!-- Bootstrap CDN JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<!-- Bootstrap CDN JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-    <!-- My custom JavaScript -->
-    <script src="bootstrap.js"></script>
-    <script src="js/partial.js"></script>
+<!-- My custom JavaScript -->
+<script src="bootstrap.js"></script>
+<script src="js/partial.js"></script>
