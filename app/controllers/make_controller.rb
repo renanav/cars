@@ -2,12 +2,11 @@ class MakeController < ApplicationController
 
 
   def index
-    # @makes = Make.all
       @make = Make.find_by(name: params[:make_name])
       @make_models = @make.models
 
-      mod = @make.models | @make.models
-      @remove_dup_models = mod
+      # mod = @make.models | @make.models
+      # @remove_dup_models = mod
   end
 
   def cat_make
@@ -19,14 +18,6 @@ class MakeController < ApplicationController
           when "super_saloon" then @cars = Car.where(category: "super_saloon")
         end
   end
-
-  # def all_makes
-  #   # @all_makes=Make.all
-  # end
-
-  # def show_all_makes
-  #   @all_makes=Make.all
-  # end
 
   def show
   end

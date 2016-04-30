@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   # before_action :show_all_makes will call the action :show all makes, and because
   # it's in the ApplicationController it will be available throught the app
-  before_action :show_all_makes
+  before_action :show_all_makes, :show_all_models
   # This method is used to show all the makes, putting it in the
   #  application controller will make it available in all of the
   #  views
@@ -16,5 +16,5 @@ class ApplicationController < ActionController::Base
   def show_all_models
     @all_models=Model.all
   end
-  
+
 end

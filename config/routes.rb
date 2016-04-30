@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get '/dealership/' => 'category#index'
   get '/dealership/category' => 'category#cat_make'
   get '/dealership/category/make/model_id' => 'model#show' #not sure about the path
-  get '/dealership/category/make' => 'make#all_makes'
+  # get '/dealership/category/make' => 'make#all_makes'
   # get '/dealership/category/make/model' => 'model#show'
 
   resources :dealership
