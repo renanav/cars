@@ -35,7 +35,7 @@
         <ul id="makers-and-models-button-list" class="dropdown-menu" role="menu" aria-labelledby="dLabel2">
           <% @all_models.each do |allModelsDisplay| %>
           <li><%#= link_to allMakesDisplay.name, make_index_path(make_name: allMakesDisplay.name) %></li>
-          <li><%= link_to allModelsDisplay.name, model_index_path(id: allModelsDisplay.id) %></li>
+          <li><%= link_to allModelsDisplay.name, model_path(allModelsDisplay) %></li>
           <% end %>
         </ul>
       </div>
