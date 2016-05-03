@@ -16,8 +16,8 @@
     </div>
     <div class="col-md-3">
       <div class="dropdown">
-        <button id="dLabel1" data-toggle="dropdown" type="button" class="btn btn-lg btn-secondary btn-block dropdown-toggle" aria-haspopup="true" aria-expanded="false" role="button">Makes
-          <span class="caret"></span>
+        <button id="dLabel1" data-toggle="dropdown" type="button" class="btn btn-lg btn-secondary btn-block dropdown-toggle" aria-haspopup="true" aria-expanded="false" role="button"><a>Makes
+          <span class="caret"></span></a>
         </button>
         <ul id="makers-and-models-button-list" class="dropdown-menu" role="menu" aria-labelledby="dLabel1">
           <% @all_makes.each do |allMakesDisplay| %>
@@ -28,13 +28,11 @@
     </div>
     <div class="col-md-3">
       <div class="dropdown">
-        <button id="dLabel2" data-toggle="dropdown" type="button" class="btn btn-lg btn-secondary btn-block dropdown-toggle" aria-haspopup="true" aria-expanded="false" role="button">Models
-          <!-- <button class="btn btn-lg btn-secondary btn-block"> -->
-          <span class="caret"></span>
+        <button id="dLabel2" data-toggle="dropdown" type="button" class="btn btn-lg btn-secondary btn-block dropdown-toggle" aria-haspopup="true" aria-expanded="false" role="button"><a>Models
+          <span class="caret"></span></a>
         </button>
         <ul id="makers-and-models-button-list" class="dropdown-menu" role="menu" aria-labelledby="dLabel2">
           <% @all_models.each do |allModelsDisplay| %>
-          <li><%#= link_to allMakesDisplay.name, make_index_path(make_name: allMakesDisplay.name) %></li>
           <li><%= link_to allModelsDisplay.name, model_path(allModelsDisplay) %></li>
           <% end %>
         </ul>
