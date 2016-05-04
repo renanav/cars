@@ -197,4 +197,14 @@ color: black;
 
 .car-description-ul *{
   color: black;
+  margin:0 0 10px 0;
+
+  &:visited {
+    color: none;
+  }
+
+  &:hover {
+    color: none;
+    background-color: none;
+  }
 }
