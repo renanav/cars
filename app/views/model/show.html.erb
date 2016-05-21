@@ -12,7 +12,7 @@
   <%= render 'layouts/partial' %>
 
   <h2 id="model-name">
-    <%= @models.name %>
+    <%= @models.make.name %> <%= @models.name %> 
   </h2>
 
   <div>
@@ -118,11 +118,12 @@
       </div>
       <% when 10 %>
       <%= image_tag ("land_rover_hse.png"), :class=>"car-display" %>
-      <div class="car-description">CASE 10 DESCRIPTION
+      <div class="car-description">
         <ul class="car-description-ul">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>EFFORTLESS HANDLING - Adaptive Dynamics constantly monitors the vehicle’s movements and reacts accordingly, minimising body-roll to give you a more comfortable drive</li>
+          <li>AUTOMATIC ACCESS HEIGHT - The new Automatic Access Height feature lowers the vehicle with precision for easier entry and exit when parked. Arriving in style at any function has never been more relaxed</li>
+          <li>R-TDV6 AUTOMATIC (4WD) 3.0 litre Diesel (258PS) with Stop/Start. 0-100kph (0-60mph) in 7.9 seconds.
+              Grained leather seat ‘Style 1’, ten-way driver and passenger front seats, heated front seats, driver’s seat memory and rear bench seat</li>
           <li>Starting at $</li>
         </ul>
       </div>
