@@ -33,7 +33,7 @@ Model.create!([
   {name: "S600", model_id: 6, make_id: 2, category_id: 1, image: "mercedes_s600"},
   {name: "LS Hybrid", model_id: 7, make_id: 3, category_id: 1, image: "lexus_ls_hybrid"},
   {name: "LS", model_id: 8, make_id: 3, category_id: 1, image: "lexus_ls"},
-  {name: "GSF", model_id: 9, make_id: 3, category_id: 1, image: "lexus_gsf"},
+  {name: "GS F", model_id: 9, make_id: 3, category_id: 1, image: "lexus_gsf"},
   {name: "HSE", model_id: 10, make_id: 4, category_id: 2, image: "land_rover_hse"},
   {name: "Supercharged", model_id: 11, make_id: 4, category_id: 2, image: "land_rover_supercharged"},
   {name: "SV Autobiography", model_id: 12, make_id: 4, category_id: 2, image: "land_rover_sv_autobiography"},
