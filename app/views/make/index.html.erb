@@ -11,7 +11,8 @@
 <!-- Present a different background for each chosen make's body page -->
 <% case @make.name %>
   <% when "Audi" %>
-    <body class="make-background" id="audi-background">
+  <%= image_tag "audi-background.png", :class=>"make-background"%>
+    <!-- <body class="make-background" id="audi-background"> -->
   <% when "Mercedes" %>
     <body class="make-background" id="mercedes-background">
   <% when "Lexus" %>
