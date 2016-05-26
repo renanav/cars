@@ -10,42 +10,33 @@ just call the _partial -->
 
 <!-- this will display a different background for each chosen category's body page, this one should eventually be in the category helper -->
 <% case @cat.id %>
-  <% when 1 %>
-  <!-- <div class="category-background"> -->
-  <%= image_tag "sedan-background.jpg", :class=>"category-background"%>
-    <!-- <body id="case-1-background"> -->
-  <!-- </div> -->
-  <% when 2 %>
-  <!-- <div class="category-background"> -->
-    <!-- <body id="case-2-background"> -->
-      <%= image_tag "terrain_1.jpg", :class=>"category-background"%>
-    <!-- </div> -->
-  <% when 3 %>
-      <%= image_tag "super-sport-background.jpg", :class=>"category-background"%>
-    <!-- <body id="case-3-background"> -->
-  <% when 4 %>
-    <!-- <body id="case-4-background"> -->
-    <%= image_tag "super-saloon-background.jpg", :class=>"category-background"%>
+<% when 1 %>
+<%= image_tag "sedan-background.jpg", :class=>"category-background"%>
+<% when 2 %>
+<%= image_tag "terrain_1.jpg", :class=>"category-background"%>
+<% when 3 %>
+<%= image_tag "super-sport-background.jpg", :class=>"category-background"%>
+<% when 4 %>
+<%= image_tag "super-saloon-background.jpg", :class=>"category-background"%>
 <% end %>
 
-
-
-
 <div class="make-selector">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <div class="row">
-              <% @remove_dup.each do |make| %>
-                <div class="col-md-4">
-                  <button class="btn btn-lg btn-secondary btn-block"> <%=link_to make.name.capitalize, make_index_path(make_name: make.name) %> </button>
-                </div>
-
-              <% end %>
-          </div>
-        <!-- /.navbar-collapse -->
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="row">
+        <% @remove_dup.each do |make| %>
+        <div class="col-md-4">
+          <button class="btn btn-lg btn-secondary btn-block">
+            <%=link_to make.name.capitalize, make_index_path(make_name: make.name) %>
+          </button>
         </div>
-    <!-- /.container -->
+
+        <% end %>
+      </div>
+      <!-- /.navbar-collapse -->
     </div>
+    <!-- /.container -->
   </div>
+</div>
