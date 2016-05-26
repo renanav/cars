@@ -1,53 +1,53 @@
 // Place all the styles related to the make controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#audi-background {
-  background-image: url("https://s3.amazonaws.com/railscars/audi-background.png");
-}
-
-#mercedes-background {
-  background-image: url("https://s3.amazonaws.com/railscars/mercedes-background.jpg");
-}
-
-#lexus-background {
-  background-image: url("https://s3.amazonaws.com/railscars/lexus-background.jpg");
-}
-
-#land-rover-background {
-  background-image: url("https://s3.amazonaws.com/railscars/land-rover-background.jpg");
-}
-
-#bmw-background {
-  background-image: url("https://s3.amazonaws.com/railscars/bmw-background.jpg");
-}
-
-#ferrari-background {
-  background-image: url("https://s3.amazonaws.com/railscars/ferrari-background.jpg");
-}
-
-#porsche-background {
-  background-image: url("https://s3.amazonaws.com/railscars/porsche-background.jpg");
-}
-
-#lamborghini-background {
-  background-image: url("https://s3.amazonaws.com/railscars/lamborghini-background.jpg");
-}
-
-#bugatti-background {
-  background-image: url("https://s3.amazonaws.com/railscars/bugatti-background.jpg");
-}
-
-#rolls-roys-background {
-  background-image: url("https://s3.amazonaws.com/railscars/rolls-roys-background.jpg");
-}
-
-#bentley-background {
-  background-image: url("https://s3.amazonaws.com/railscars/bentley-background.jpg");
-}
-
-#aston-martin-background {
-  background-image: url("https://s3.amazonaws.com/railscars/aston-martin-background.jpg");
-}
+// #audi-background {
+//   background-image: url("https://s3.amazonaws.com/railscars/audi-background.png");
+// }
+//
+// #mercedes-background {
+//   background-image: url("https://s3.amazonaws.com/railscars/mercedes-background.jpg");
+// }
+//
+// #lexus-background {
+//   background-image: url("https://s3.amazonaws.com/railscars/lexus-background.jpg");
+// }
+//
+// #land-rover-background {
+//   background-image: url("https://s3.amazonaws.com/railscars/land-rover-background.jpg");
+// }
+//
+// #bmw-background {
+//   background-image: url("https://s3.amazonaws.com/railscars/bmw-background.jpg");
+// }
+//
+// #ferrari-background {
+//   background-image: url("https://s3.amazonaws.com/railscars/ferrari-background.jpg");
+// }
+//
+// #porsche-background {
+//   background-image: url("https://s3.amazonaws.com/railscars/porsche-background.jpg");
+// }
+//
+// #lamborghini-background {
+//   background-image: url("https://s3.amazonaws.com/railscars/lamborghini-background.jpg");
+// }
+//
+// #bugatti-background {
+//   background-image: url("https://s3.amazonaws.com/railscars/bugatti-background.jpg");
+// }
+//
+// #rolls-roys-background {
+//   background-image: url("https://s3.amazonaws.com/railscars/rolls-roys-background.jpg");
+// }
+//
+// #bentley-background {
+//   background-image: url("https://s3.amazonaws.com/railscars/bentley-background.jpg");
+// }
+//
+// #aston-martin-background {
+//   background-image: url("https://s3.amazonaws.com/railscars/aston-martin-background.jpg");
+// }
 
 .make-background{
   background-size:cover;
